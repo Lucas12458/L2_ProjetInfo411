@@ -7,8 +7,8 @@
   <script src="script.js"></script>
 </head>
 <body>
-  ...
-  <!-- Le reste du contenu -->
-  ...
+  
+<h1>Titre</h1>
+  
 </body>
 </html>
