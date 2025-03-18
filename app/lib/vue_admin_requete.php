@@ -33,7 +33,7 @@ function html_tr_requete($requete){
 	$message=$requete["message"] ;
 	
 	
-    $html.="\t<tr class=tr_requete>\n"; 
+    $html="\t<tr class=tr_requete>\n"; 
     $html.="\t\t<td>$id</td>\n" ;
 	$html.="\t\t<td>$email</td>\n" ;
 	$html.="\t\t<td>$objet</td>\n" ;
