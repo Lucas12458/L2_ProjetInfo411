@@ -564,7 +564,7 @@ svg{
   top: -5px;
   background: none;
   pointer-events: none;
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
 }
 input[type="range"]::-webkit-slider-thumb {
   pointer-events: auto;

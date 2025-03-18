@@ -1,4 +1,5 @@
 <?php
+/*
     session_start(); //Pour accéder aux variables de session
     
     include('db/db_connect.php');
@@ -9,7 +10,7 @@
         $action=$_GET["action"];
         if($action =="disconnect"){session_destroy();}; //Supprime la session en cours après une deconnexion
     };
-    
+*/    
 
 ?>
 
@@ -26,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+  
     <header>
             <a href="index.php" class="Logo"><img id="logoo" src="images/main/logo_taiga.png"></a>
 
@@ -137,7 +138,7 @@
     <!-- Fetch avec js -->
 
     <script>
-
+        /*
         // CONNEXION
         var connexion= document.getElementById("connexion");
         var session = <?php echo json_encode($_SESSION)?>;
@@ -152,7 +153,8 @@
             }
         
         }
-
+        */
+       /*
         // FONCTION DE RECHERCHE DE PRODUIT
         fetch("lib/article_json.php").then(json_to_data).then(produit_card);
         let chargement_actif = true;
@@ -302,12 +304,12 @@
                 }
             }
         }
-
+    */
     </script>
 
     <?php
-
-
+        
+      /*
         if(isset($_POST)){
             $quantite = 1; // Quantite de l'article
             $id_usr = $_SESSION["user"]; // Id de l'utilisateur
@@ -319,14 +321,14 @@
             }
             
 
-        }
+        }*/
 
     ?>
-
 
 
 <footer class="div-footer">
 	<?php include "lib/footer.php"; ?>
 </footer>
+
 </body>
 </html>

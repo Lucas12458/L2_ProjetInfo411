@@ -1,4 +1,6 @@
 <?php
+
+/*
     session_start(); //Pour accéder aux variables de session
     
     include('../db/db_connect.php');
@@ -8,7 +10,7 @@
         if($action =="disconnect"){session_destroy();}; //Supprime la session en cours après une deconnexion
     };
     
-
+*/
 ?>
 
 

@@ -1,6 +1,8 @@
 <?php
+/*
 include "../db/db_connect.php"; 
 include "../crud/requete.crud.php"; 
+*/
 ?>  
 
 <!DOCTYPE html>
