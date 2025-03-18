@@ -6,28 +6,6 @@
 
     $articles = liste_produit($conn); // select_1_produit est une fonction de article_crud.php
 
-    foreach ($articles as $key => $article) { // Pour chaque article
-        if(!empty($article['image'])){
-			$articles[$key]['image'] = base64_encode($article['image']);
-		}
-		if(!empty($article['image2'])){
-			$articles[$key]['image2'] = base64_encode($article['image2']);
-		}
-		if(!empty($article['image3'])){
-			$articles[$key]['image3'] = base64_encode($article['image3']);
-		}
-		if(!empty($article['image4'])){
-			$articles[$key]['image4'] = base64_encode($article['image4']);
-		}
-		if(!empty($article['image5'])){
-			$articles[$key]['image5'] = base64_encode($article['image5']);
-		}
-		if(!empty($article['image6'])){
-			$articles[$key]['image6'] = base64_encode($article['image6']);
-		}
-		// On encode l'image en base64 car nos images sont de type blob
-    }
-
     // Convertit en json
     $articles_json = json_encode($articles);
 
