@@ -46,7 +46,7 @@ function html_tr_produit($produit){
 	
 	
 	
-	$html.="\t\t<div id=produit_image>";
+	$html="\t\t<div id=produit_image>";
 	
 	$html.="\t\t<div id=produit>";
 	
@@ -221,7 +221,7 @@ function html_a_update_produit($id){
 	
 	
 	
-	$html.="<form action='admin_article.php?id=$id' method='POST' enctype='multipart/form-data' id=form_article> \n" ; 
+	$html="<form action='admin_article.php?id=$id' method='POST' enctype='multipart/form-data' id=form_article> \n" ; 
 	
 	$html.="<div id=titre_form>";
 	$html.="<label for='titre'>Titre</label>\n" ;
