@@ -9,7 +9,7 @@ function html_tr_produit($produit){
 	$titre=$produit["titre"] ; 
 	$description=$produit["description"] ;
 	$prix=$produit["prix"];
-	$image=base64_encode($produit["image"]); 
+	$image=$produit["image"]; 
 	$num_cat=$produit["num_cat"];
 	$images=json_encode($image);
 	
@@ -94,7 +94,7 @@ function html_tr_produit($produit){
 	let images = new Image();
 	var image_php= $images;
 	// Style image
-	images.src = 'data:image/png;base64,'+ image_php; // Ajout de l'image particulier car base64
+	images.src = '../images/produits/'+ image_php; // Ajout de l'image particulier car base64
 	images.width = 300; // Taille de l'image
 	images.height = 200; // Taille de l'image
 	images.alt = 'Image du produit'; // Texte alternatif de l'image
