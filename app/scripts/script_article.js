@@ -126,7 +126,7 @@
 			div_art.style.height = "450px"; // Style de la div
 			div_art.style.width = "19.89%"; // Style de la div
 
-			images_art.src = data[i]["image"]; // Ajout de l'image particulier car base64
+			images_art.src = "../images/produits/"+data[i]["image"]; // Ajout de l'image particulier car base64
 			images_art.width = 300; // Taille de l'image
 			images_art.height = 200; // Taille de l'image
 			images_art.alt = "Image du produit"; // Texte alternatif de l'image
