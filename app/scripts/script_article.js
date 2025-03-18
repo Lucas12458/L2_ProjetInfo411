@@ -48,10 +48,10 @@
 			img.className = "img_produit";
 				
 			if(i===1){ 
-				img.src = 'data:image/png;base64,'+data["image"];
+				img.src = data["image"];
 			} 
 			else { 
-				img.src = 'data:image/png;base64,'+data["image"+i.toString()];
+				img.src = data["image"+i.toString()];
 			}
 			
 			if(img.src === 'data:image/png;base64,'){
@@ -126,7 +126,7 @@
 			div_art.style.height = "450px"; // Style de la div
 			div_art.style.width = "19.89%"; // Style de la div
 
-			images_art.src = 'data:image/png;base64,'+data[i]["image"]; // Ajout de l'image particulier car base64
+			images_art.src = data[i]["image"]; // Ajout de l'image particulier car base64
 			images_art.width = 300; // Taille de l'image
 			images_art.height = 200; // Taille de l'image
 			images_art.alt = "Image du produit"; // Texte alternatif de l'image
