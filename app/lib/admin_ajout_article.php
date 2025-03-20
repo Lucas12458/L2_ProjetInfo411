@@ -29,8 +29,8 @@ include "header_admin.php";
 
 
 <?php
-error_reporting(E_ERROR | E_WARNING | E_PARSE);  //Permet d'indiquer seulement certains types d'erreur  
-ini_set ( 'display_errors','1') ;
+//error_reporting(E_ERROR | E_WARNING | E_PARSE);  //Permet d'indiquer seulement certains types d'erreur  
+//ini_set ( 'display_errors','1') ;
 
 $html=html_form_create() ;
 echo($html) ; 

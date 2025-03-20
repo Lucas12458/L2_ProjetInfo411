@@ -17,7 +17,7 @@
     // Convertit en json
     $panier_json = json_encode($paniers);
 
-    header('Content-Type: application/json; charset=UTF-8'); 
+    //header('Content-Type: application/json; charset=UTF-8'); 
     echo $panier_json;
 
 ?>

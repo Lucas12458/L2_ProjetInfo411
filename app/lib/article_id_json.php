@@ -36,7 +36,7 @@
     // Convertit en json
     $article_json = json_encode($article);
 
-    header('Content-Type: application/json; charset=UTF-8'); 
+    //header('Content-Type: application/json; charset=UTF-8'); 
     echo $article_json;
 
 ?>

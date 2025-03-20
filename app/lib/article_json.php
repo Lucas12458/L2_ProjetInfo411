@@ -9,7 +9,7 @@
     // Convertit en json
     $articles_json = json_encode($articles);
 
-    header('Content-Type: application/json; charset=UTF-8'); 
+    //header('Content-Type: application/json; charset=UTF-8'); 
     echo $articles_json;
 
 

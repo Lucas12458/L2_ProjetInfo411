@@ -1,10 +1,20 @@
-
 <?php
 
-// error_reporting(E_ALL);
-// ini_set('display_errors', '1');
+// Définir les paramètres de connexion à la base de données
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "db_taiga";
 
-$conn = mysqli_connect("localhost","root","","db_taiga");
-mysqli_set_charset($conn,"utf8");
+// Créer la connexion
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Vérifier la connexion
+if (!$conn) {
+    die("La connexion a échoué : " . mysqli_connect_error());
+}
+
+// Définir le jeu de caractères pour éviter des problèmes d'encodage
+mysqli_set_charset($conn, "utf8");
 
 ?>
