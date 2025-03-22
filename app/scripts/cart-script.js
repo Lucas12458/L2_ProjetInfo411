@@ -83,7 +83,7 @@ fetch("cart_json.php").then(json_to_data).then(affiche_panier);
                         div.style.width = "100%"; // Style de la div
 
                         // Style image
-                        images.src = "../images/produits/"+data[i]["image"]; // Ajout de l'image particulier car base64
+                        images.src = "../images/produits/"+data[i]["image"]; 
                         images.width = 300; // Taille de l'image
                         images.height = 200; // Taille de l'image
                         images.alt = "Image du produit"; // Texte alternatif de l'image

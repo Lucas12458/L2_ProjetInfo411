@@ -48,13 +48,13 @@
 			img.className = "img_produit";
 				
 			if(i===1){ 
-				img.src = 'data:image/png;base64,'+data["image"];
+				img.src = "../images/produits/"+data["image"];
 			} 
 			else { 
-				img.src = 'data:image/png;base64,'+data["image"+i.toString()];
+				img.src = "../images/produits/"+data["image"+i.toString()];
 			}
 			
-			if(img.src === 'data:image/png;base64,'){
+			if(img.src === "../images/produits/"){
 				label = document.querySelector("#lbl_img"+i.toString());
 				label.style.display = "none";
 			}

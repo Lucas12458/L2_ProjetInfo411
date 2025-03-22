@@ -9,7 +9,7 @@ function html_tr_produit($produit){
 	$titre=$produit["titre"] ; 
 	$description=$produit["description"] ;
 	$prix=$produit["prix"];
-	$image=base64_encode($produit["image"]); 
+	$image=$produit["image"]; 
 	$num_cat=$produit["num_cat"];
 	$images=json_encode($image);
 	
@@ -46,7 +46,7 @@ function html_tr_produit($produit){
 	
 	
 	
-	$html.="\t\t<div id=produit_image>";
+	$html="\t\t<div id=produit_image>";
 	
 	$html.="\t\t<div id=produit>";
 	
@@ -94,7 +94,7 @@ function html_tr_produit($produit){
 	let images = new Image();
 	var image_php= $images;
 	// Style image
-	images.src = 'data:image/png;base64,'+ image_php; // Ajout de l'image particulier car base64
+	images.src = '../images/produits/'+ image_php;
 	images.width = 300; // Taille de l'image
 	images.height = 200; // Taille de l'image
 	images.alt = 'Image du produit'; // Texte alternatif de l'image
@@ -221,7 +221,7 @@ function html_a_update_produit($id){
 	
 	
 	
-	$html.="<form action='admin_article.php?id=$id' method='POST' enctype='multipart/form-data' id=form_article> \n" ; 
+	$html="<form action='admin_article.php?id=$id' method='POST' enctype='multipart/form-data' id=form_article> \n" ; 
 	
 	$html.="<div id=titre_form>";
 	$html.="<label for='titre'>Titre</label>\n" ;
