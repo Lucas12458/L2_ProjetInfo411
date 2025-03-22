@@ -31,7 +31,6 @@
     $ID = $_GET["id"];
     $article = select_1_produit($conn,$ID); // select_1_produit est une fonction de article_crud.php
 
-	
 	//JUSQUE LA
     // Convertit en json
     $article_json = json_encode($article);

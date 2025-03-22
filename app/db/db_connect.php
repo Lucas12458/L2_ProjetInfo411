@@ -1,3 +1,4 @@
+
 <?php
 
 // Définir les paramètres de connexion à la base de données
@@ -15,6 +16,6 @@ if (!$conn) {
 }
 
 // Définir le jeu de caractères pour éviter des problèmes d'encodage
-mysqli_set_charset($conn, "utf8");
+mysqli_set_charset($conn, "utf8mb4");
 
 ?>

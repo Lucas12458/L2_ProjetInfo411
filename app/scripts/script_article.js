@@ -48,10 +48,10 @@
 			img.className = "img_produit";
 				
 			if(i===1){ 
-				img.src = "../images/produits/"+data["image"];
+				img.src = 'data:image/png;base64,'+data["image"];
 			} 
 			else { 
-				img.src = "../images/produits/"+data["image"+i.toString()];
+				img.src = 'data:image/png;base64,'+data["image"+i.toString()];
 			}
 			
 			if(img.src === 'data:image/png;base64,'){

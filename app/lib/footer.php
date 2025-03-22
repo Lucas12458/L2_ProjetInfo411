@@ -44,7 +44,7 @@
 								</h2>
 								<ul>
 									<li>  
-										<a href="http://localhost/L2_ProjetInfo411/app/index.php" title="Taiga" class="foot-link">   
+										<a href="https://l1.dptinfo-usmb.fr/~grp18/index.php" title="Taiga" class="foot-link">   
 											<span>
 												Taiga
 											</span>
@@ -60,7 +60,7 @@
 									</h2>
 									<ul>
 										<li>  
-											<a href="http://localhost/L2_ProjetInfo411/app/lib/faq.php" title="FAQs" class="foot-link">
+											<a href="https://l1.dptinfo-usmb.fr/~grp18/lib/faq.php" title="FAQs" class="foot-link">
 												<span>
 												  FAQs
 												</span>
@@ -74,7 +74,7 @@
 											</a>
 										</li>
 										<li>  
-											<a href="http://localhost/L2_ProjetInfo411/app/lib/form_contact.php" title="Contactez-nous" class="foot-link">	
+											<a href="https://l1.dptinfo-usmb.fr/~grp18/lib/form_contact.php" title="Contactez-nous" class="foot-link">	
 												<span>
 												  Contactez-nous
 												</span>

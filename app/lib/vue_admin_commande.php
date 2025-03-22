@@ -33,7 +33,7 @@ function html_tr_commande($commande){
 	$prix_total=$commande["total_prix"] ;
 	
 	
-    $html="\t<tr class=tr_commande>\n"; 
+    $html.="\t<tr class=tr_commande>\n"; 
     $html.="\t\t<td>$id</td>\n" ;
 	$html.="\t\t<td>$id_usr</td>\n" ;
 	$html.="\t\t<td>$num_commande</td>\n" ;

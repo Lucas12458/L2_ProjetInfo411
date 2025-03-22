@@ -1,5 +1,4 @@
 <?php
-/*
     session_start(); //Pour accéder aux variables de session
     
     include('../db/db_connect.php');
@@ -9,7 +8,7 @@
         $action=$_GET["action"];
         if($action =="disconnect"){session_destroy();}; //Supprime la session en cours après une deconnexion
     };
-    */
+    
 
 ?>
 
@@ -401,4 +400,3 @@ rangeInput.forEach((input) => {
 
 </body>
 </html>
-

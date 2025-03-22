@@ -25,8 +25,8 @@ function insert_requete($conn,$email, $objet, $message){
 	U: met à jour les valeurs de l'enregistrement 
 */
 
-function update_requete($conn,$email, $objet, $message){
-	$sql="UPDATE `Requete` SET `email`= '$email', `objet`= '$objet',`message`= '$message' WHERE `id`=$id" ;
+function update_requete($conn,$email, $objet, $message,$id){
+	$sql="UPDATE `Requete` SET `email`= '$email', `objet`= '$objet',`message`= '$message' WHERE `id`= $id" ;
 	global $debeug;
 	
 	if($debeug) echo $sql ; 

@@ -6,6 +6,8 @@
 
     $articles = liste_produit($conn); // select_1_produit est une fonction de article_crud.php
 
+    
+
     // Convertit en json
     $articles_json = json_encode($articles);
 

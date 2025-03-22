@@ -11,9 +11,7 @@
 
     $paniers = liste_produit_id($conn, $_GET["id"]);
 
-    foreach ($paniers as $key => $panier) {
-        $paniers[$key]['image'] = base64_encode($panier['image']); // On encode l'image en base64 car nos images sont de type blob
-    }
+   
     // Convertit en json
     $panier_json = json_encode($paniers);
 
