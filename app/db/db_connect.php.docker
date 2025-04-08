@@ -1,10 +1,16 @@
 <?php
 
+define('SERVEUR_BD',getenv('SERVEUR_BD'));
+define('USER_BD',getenv('LOGIN_BD'));
+define('PASS_BD',getenv('PASS_BD'));
+define('NOM_BD',getenv('NOM_BD'));
+
+
 // Définir les paramètres de connexion à la base de données
-$servername ="mariadb";
-$username = "user";
-$password = "1234";
-$dbname = "db_taiga";
+$servername = SERVEUR_BD;
+$username = USER_BD;
+$password = PASS_BD;
+$dbname = NOM_BD;
 
 // Créer la connexion
 $conn = mysqli_connect($servername, $username, $password, $dbname,"3306");

@@ -19,6 +19,6 @@ COPY ./app .
 # RUN cp connect.php.docker connect.php
 
 
-RUN cp app/db/db_connect.php.docker app/db/db_connect.php
+RUN cp db/db_connect.php.docker db/db_connect.php
 
 EXPOSE 80

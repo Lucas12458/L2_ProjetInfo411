@@ -4,10 +4,10 @@ services:
     mariadb:
         container_name: mariadb
         environment:
-            - MARIADB_USER=user
-            - MARIADB_PASSWORD=1234
-            - MARIADB_DATABASE=db_taiga
-            - MARIADB_ROOT_PASSWORD=1234
+            - MARIADB_USER=${LOGIN_BD}
+            - MARIADB_PASSWORD=${PASS_BD}
+            - MARIADB_DATABASE=${NOM_BD}
+            - MARIADB_ROOT_PASSWORD=${PASS_ROOT_BD}
         ports:
             - 3306:3306
         
@@ -16,6 +16,8 @@ services:
         
         volumes:
             - ./db_data:/var/lib/mysql
+
+        
         
         
         
@@ -23,11 +25,18 @@ services:
     php:
         container_name: c_monapache
         ports:
-            - 80:80
+            - ${PORT_WEB}:80
         
         image: lucas12458/monapache
 
-        
+        environment:
+            - SERVEUR_BD=${SERVEUR_BD}
+            - LOGIN_BD =${LOGIN_BD}
+            - PASS_BD = ${PASS_BD}
+            - NOM_BD = ${NOM_BD}
+
+
+
         volumes:
             - .:/var/www/html
         
@@ -38,7 +47,7 @@ services:
     phpmyadmin:
         container_name: c_phpmyadmin
         ports:
-            - 8080:80
+            - ${PORT_PHPMYADMIN}:80
         environment:
             - PMA_ARBITRARY=1
             - PMA_HOST=mariadb
