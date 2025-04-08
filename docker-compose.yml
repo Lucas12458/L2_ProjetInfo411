@@ -1,0 +1,35 @@
+name: projet411
+services:
+    
+    mariadb:
+        container_name: mariadb
+        environment:
+            - MARIADB_USER=user
+            - MARIADB_PASSWORD
+            - MARIADB_DATABASE=db_taiga
+            - MARIADB_ROOT_PASSWORD=1234
+        ports:
+            - 3306:3306
+        
+        image: mariadb
+
+    php:
+        container_name: c_monapache
+        ports:
+            - 80:80
+        
+        image: lucas12458/monapache
+
+    phpmyadmin:
+        container_name: c_phpmyadmin
+        ports:
+            - 8080:80
+        environment:
+            - PMA_ARBITRARY=1
+            - PMA_HOST=mariadb
+        image: phpmyadmin/phpmyadmin
+      
+    ubuntu:
+        container_name: c_monubuntu
+        image: lucas12458/monubuntu
+    
