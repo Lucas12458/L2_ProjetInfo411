@@ -2,7 +2,7 @@
 
 // Définir les paramètres de connexion à la base de données
 $servername ="mariadb";
-$username = "root";
+$username = "user";
 $password = "1234";
 $dbname = "db_taiga";
 

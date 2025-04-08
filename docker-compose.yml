@@ -5,7 +5,7 @@ services:
         container_name: mariadb
         environment:
             - MARIADB_USER=user
-            - MARIADB_PASSWORD
+            - MARIADB_PASSWORD=1234
             - MARIADB_DATABASE=db_taiga
             - MARIADB_ROOT_PASSWORD=1234
         ports:
