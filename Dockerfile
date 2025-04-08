@@ -13,12 +13,12 @@ WORKDIR /var/www/
 
 WORKDIR /var/www/html
 
-COPY . .
+COPY ./app .
 
 # Si vous avez un fichier de config spécifique dans votre projet github
 # RUN cp connect.php.docker connect.php
 
 
-RUN cp app/db/db_connect.php.docker app/db/db_connect.php
+RUN cp db/db_connect.php.docker db/db_connect.php
 
 EXPOSE 80
