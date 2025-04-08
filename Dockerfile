@@ -8,12 +8,17 @@ RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 WORKDIR /var/www/
 
-RUN git clone https://github.com/Lucas12458/L2_ProjetInfo411.git html
+#RUN git clone https://github.com/Lucas12458/L2_ProjetInfo411.git html
+
 
 WORKDIR /var/www/html
+
+COPY . .
 
 # Si vous avez un fichier de config spécifique dans votre projet github
 # RUN cp connect.php.docker connect.php
 
 
 RUN cp app/db/db_connect.php.docker app/db/db_connect.php
+
+EXPOSE 80
