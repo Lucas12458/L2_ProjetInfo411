@@ -13,12 +13,27 @@ services:
         
         image: mariadb
 
+        
+        volumes:
+            - ./db_data:/var/lib/mysql
+        
+        
+        
+
     php:
         container_name: c_monapache
         ports:
             - 80:80
         
         image: lucas12458/monapache
+
+        
+        volumes:
+            - .:/var/www/html
+        
+        
+        
+       
 
     phpmyadmin:
         container_name: c_phpmyadmin
@@ -28,8 +43,12 @@ services:
             - PMA_ARBITRARY=1
             - PMA_HOST=mariadb
         image: phpmyadmin/phpmyadmin
+
+        
+            
+        
       
     ubuntu:
         container_name: c_monubuntu
         image: lucas12458/monubuntu
-    
+        
