@@ -1,7 +1,5 @@
- 
 <?php
 include("../db/db_connect.php");
-
 session_start();
 include ("fct_conn.php");
 if(isset($_POST["login"])){

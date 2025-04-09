@@ -5,6 +5,7 @@
     include('../crud/panier_crud.php');
     include('../crud/paiement_crud.php');
     
+    
     if(isset($_GET["action"])){
         $action=$_GET["action"];
         if($action =="disconnect"){session_destroy();}; //Supprime la session en cours après une deconnexion

@@ -1,6 +1,4 @@
-
 <?php
-
 function select_paiement($conn){
     $sql="SELECT * FROM `Commande`";
     $result=mysqli_query($conn, $sql);

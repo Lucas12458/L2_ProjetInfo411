@@ -1,17 +1,18 @@
-
 <?php
-
+    session_start();
     include("../db/db_connect.php");
     include("../crud/panier_crud.php");
-
-    session_start();
     
-    $panier = liste_panier_user($conn, $_SESSION["user"]);
+    header('Content-Type: application/json; charset=UTF-8'); 
 
-    // Convertit en json
-    $panier_json = json_encode($panier);
+    // Récupère le panier
+        $panier = liste_panier_user($conn, $_SESSION["user"]);
 
-    //header('Content-Type: application/json; charset=UTF-8'); 
-    echo $panier_json;
-
+    // Convertit en JSON et affiche
+        echo json_encode($panier);
+    
+    
+    
+    include("../db/db_disconnect.php");
+    
 ?>

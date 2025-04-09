@@ -1,6 +1,4 @@
-
 <?php
-
 function select_panier($conn){
     $sql="SELECT * FROM `Panier_article`";
     $result=mysqli_query($conn, $sql);
@@ -77,6 +75,4 @@ function liste_panier_user_json($conn, $id_usr){
 
     return json_encode($list);
 }
-
-
 ?>

@@ -64,7 +64,7 @@ include "vue_admin_commande.php";
 
 ?>
 <?php
-$id=$_GET["id"];
+
 
 $requete=list_requete($conn);
 $commande=liste_paiement($conn);

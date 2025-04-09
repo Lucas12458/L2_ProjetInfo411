@@ -1,4 +1,3 @@
-
 <?php
 
 function select_produit($conn){

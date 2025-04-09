@@ -178,30 +178,30 @@
 	</script>
 
 	<?php
+	if (isset($_SESSION["user"])) {
+		$id_usr = $_SESSION["user"];
 
+	// Gestion bouton_panier (si présent)
+		if (isset($_POST["numero_article"]) && isset($_POST["bouton_panier"])) {
+			$article = $_POST["numero_article"];
+			$action = $_POST["bouton_panier"];
 
-	if(isset($_POST)){
-		$quantite = 1; // Quantite de l'article
-		$id_usr = $_SESSION["user"]; // Id de l'utilisateur
-		$article = $_POST["numero_article"]; // Id de l'article
-		$action = $_POST["bouton_panier"]; // Action du bouton
-
-		if($action == "Ajouter au panier"){ // Si l'utilisateur clique sur ajt au panier
-			insert_panier($conn, $id_usr, $article, $quantite); // Ajout de l'article dans le panier
+			if ($action == "Ajouter au panier") {
+				insert_panier($conn, $id_usr, $article, 1);
+			}
 		}
 
-		
-		
-		$qty_article = 1; // Quantite de l'article
-		$action_article = $_POST["bouton_article"]; // Action du bouton de l'article
-		$article_art = $_POST["ro_article"]; // Id de l'article
+		// Gestion bouton_article (si présent)
+		if (isset($_POST["ro_article"]) && isset($_POST["bouton_article"])) {
+			$article_art = $_POST["ro_article"];
+			$action_article = $_POST["bouton_article"];
 
-		if($action_article == "Ajouter au panier"){ // Si l'utilisateur clique sur ajt au panier
-			insert_panier($conn, $id_usr, $article_art, $qty_article); // Ajout de l'article dans le panier
+			if ($action_article == "Ajouter au panier") {
+				insert_panier($conn, $id_usr, $article_art, 1);
+			}
 		}
-		
-
 	}
+
 
 	?>
 

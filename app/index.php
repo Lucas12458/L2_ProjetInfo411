@@ -1,9 +1,9 @@
 <?php
     session_start(); //Pour accéder aux variables de session
-    
     include('db/db_connect.php');
     include('crud/panier_crud.php');
     include('crud/article_crud.php');
+    
     
     if(isset($_GET["action"])){
         $action=$_GET["action"];
@@ -308,7 +308,11 @@
     <?php
 
 
-        if(isset($_POST)){
+    if (
+        isset($_POST["numero_article"]) &&
+        isset($_POST["bouton_panier"]) &&
+        isset($_SESSION["user"])
+    ) {
             $quantite = 1; // Quantite de l'article
             $id_usr = $_SESSION["user"]; // Id de l'utilisateur
             $article = $_POST["numero_article"]; // Id de l'article
