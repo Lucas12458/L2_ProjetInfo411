@@ -44,7 +44,7 @@
 								</h2>
 								<ul>
 									<li>  
-										<a href="https://l1.dptinfo-usmb.fr/~grp18/index.php" title="Taiga" class="foot-link">   
+										<a href="../index.php" title="Taiga" class="foot-link">   
 											<span>
 												Taiga
 											</span>
@@ -60,7 +60,7 @@
 									</h2>
 									<ul>
 										<li>  
-											<a href="https://l1.dptinfo-usmb.fr/~grp18/lib/faq.php" title="FAQs" class="foot-link">
+											<a href="../lib/faq.php" title="FAQs" class="foot-link">
 												<span>
 												  FAQs
 												</span>
@@ -74,7 +74,7 @@
 											</a>
 										</li>
 										<li>  
-											<a href="https://l1.dptinfo-usmb.fr/~grp18/lib/form_contact.php" title="Contactez-nous" class="foot-link">	
+											<a href="../lib/form_contact.php" title="Contactez-nous" class="foot-link">	
 												<span>
 												  Contactez-nous
 												</span>
@@ -86,7 +86,7 @@
     <div class="footer-bottom">
             <address>  
                 <div>
-					© 2024 boutique Taiga. Tous droits réservés.
+					© 2025 boutique Taiga. Tous droits réservés.
                 </div>   
             </address> 
     </div>  
