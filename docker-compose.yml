@@ -31,14 +31,14 @@ services:
 
         environment:
             - SERVEUR_BD=${SERVEUR_BD}
-            - LOGIN_BD =${LOGIN_BD}
-            - PASS_BD = ${PASS_BD}
-            - NOM_BD = ${NOM_BD}
+            - LOGIN_BD=${LOGIN_BD}
+            - PASS_BD=${PASS_BD}
+            - NOM_BD=${NOM_BD}
 
 
 
-        volumes:
-            - .:/var/www/html
+        #volumes:
+        #   - ./app/var/www/html
         
         
         
