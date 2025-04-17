@@ -306,7 +306,7 @@
     </script>
 
     <?php
-
+    echo("Test");
 
     if (
         isset($_POST["numero_article"]) &&
