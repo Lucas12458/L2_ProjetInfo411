@@ -40,7 +40,8 @@ services:
 
         volumes:
          - ./app:/var/www/html
-        
+
+        command: cp ./app/db_connect.php.docker ./app/db_connect.php    
         
         
        
