@@ -91,7 +91,7 @@
                         <li class="paper-border-shadow-shadow-large-shadow-hover">          
                             <a href="lib/catalogue_entier_json.php?num_cat=4"><img class="img-cato" src="images/articles/tv-img.png" alt="image tv"></a>
                             <h2>
-                                <a href="lib/catalogue_entier_json.php?num_cat=4">Televisions</a>            
+                                <a href="lib/catalogue_entier_json.php?num_cat=4">Télévisions</a>            
                             </h2>
                         </li>
                         
@@ -306,7 +306,7 @@
     </script>
 
     <?php
-    echo("Test");
+    
 
     if (
         isset($_POST["numero_article"]) &&
