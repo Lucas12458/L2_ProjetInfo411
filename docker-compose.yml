@@ -16,6 +16,7 @@ services:
         
         volumes:
             - ./db_data:/var/lib/mysql
+           # - ./sql/db_taiga.sql:/docker-entrypoint-initdb.d/db_taiga.sql
 
         
         
