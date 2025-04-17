@@ -39,7 +39,7 @@ services:
 
 
         volumes:
-         - L2_ProjetInfo411/app:/var/www/html
+         - /app:/var/www/html
         
         
         
